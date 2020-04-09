@@ -8,3 +8,6 @@ Getting started
 * [spacetime.ipynb](spacetime.ipynb) Moving domain example (space-time)
 * [tracefem_scalar.ipynb](tracefem_scalar.ipynb) Surface PDE (stationary, scalar)
 * [tracefem_vector.ipynb](tracefem_vector.ipynb) Surface PDE (stationary, vector)
+* [cutmg.ipynb](cutmg.ipynb) Cut MultiGrid Solver (stationary, scalar)
+* [mlset_basic.ipynb](mlset_basic.ipynb) Multiple level sets, basics
+* [mlset_pde.ipynb](mlset_pde.ipynb) Multiple level sets, solving a simple PDE

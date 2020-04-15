@@ -11,3 +11,7 @@ Getting started
 * [cutmg.ipynb](cutmg.ipynb) Cut MultiGrid Solver (stationary, scalar)
 * [mlset_basic.ipynb](mlset_basic.ipynb) Multiple level sets, basics
 * [mlset_pde.ipynb](mlset_pde.ipynb) Multiple level sets, solving a simple PDE
+
+
+Run on binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ngsxfem/ngsxfem-jupyter/binder)
+        

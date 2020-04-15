@@ -1,0 +1,11 @@
+git clone https://github.com/ngsxfem/ngsxfem.git .ngsxfem
+cd .ngsxfem
+        
+INSTLOCATION=/home/jovyan/.local
+        
+mkdir build
+cd build
+
+cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION} -DBUILD_NGSOLVE=OFF -DCMAKE_CXX_COMPILER=ngscxx -DCMAKE_LINKER=ngsld -DUSE_GUI=OFF
+make
+make install        

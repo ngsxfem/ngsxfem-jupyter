@@ -1,0 +1,22 @@
+name: ngs-environment
+channels:
+  - conda-forge
+  - ngsolve
+  - pyviz
+dependencies:
+  - python
+  - ngsolve-nogui
+  - bokeh
+  - pyviz_comms
+  - panel
+  - lxml
+  - cmake
+  - clang
+  - anaconda::pybind11 
+  - numpy
+  - scipy
+  - matplotlib
+  - rise 
+  - pip:
+    - git+git://github.com/pyvista/pyvista@master
+    - pyct

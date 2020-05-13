@@ -1,4 +1,4 @@
-# pip install git+https://github.com/ngsxfem/ngsxfem.git@master --user --upgrade
+pip install git+https://github.com/ngsxfem/ngsxfem.git@master --user --upgrade
 # git clone https://github.com/ngsxfem/ngsxfem.git .ngsxfem
 # cd .ngsxfem
         

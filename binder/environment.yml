@@ -19,4 +19,5 @@ dependencies:
   - rise 
   - pip:
     - git+git://github.com/pyvista/pyvista@master
+    - git+git://github.com/ngsxfem/ngsxfem.git@master
     - pyct

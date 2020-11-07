@@ -1,0 +1,9 @@
+pages:
+  image: schruste/ngsxfem
+  script:
+    - jupyter-nbconvert --to html --execute citest.ipynb
+    - mkdir pages
+    - mv *.html pages    
+  artifacts:
+    paths:
+      - pages

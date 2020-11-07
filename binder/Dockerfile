@@ -1,4 +1,4 @@
-FROM schruste/ngsxfem:latest
+FROM schruste/ngsxfem:20201108
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000

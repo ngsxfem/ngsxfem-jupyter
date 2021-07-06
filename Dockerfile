@@ -22,8 +22,8 @@ WORKDIR /home/${NB_USER}
 
 RUN pip install jupyter_contrib_nbextensions --user
 RUN pip install jupyter_nbextensions_configurator --user
-RUN jupyter nbextensions_configurator enable --user
 RUN jupyter contrib nbextension install --user
+RUN jupyter nbextensions_configurator enable --user
 RUN jupyter nbextension enable codefolding/main
 RUN jupyter nbextension enable scratchpad/main
 RUN jupyter nbextension enable toc2/main

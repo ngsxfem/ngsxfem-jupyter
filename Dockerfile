@@ -17,8 +17,8 @@ RUN chmod +x /usr/bin/tini
 
 RUN chown -R ${NB_UID} ${HOME}
 
-RUN pip install jupyter_contrib_nbextensions --user
-RUN pip install jupyter_nbextensions_configurator --user
+RUN pip install jupyter_contrib_nbextensions
+RUN pip install jupyter_nbextensions_configurator
 RUN pip install RISE
 RUN pip install ipywidgets
 

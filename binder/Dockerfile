@@ -10,11 +10,11 @@ COPY . ${HOME}
 
 USER root
 RUN chown -R ${NB_UID} ${HOME}
+RUN pip install jupyter_contrib_nbextensions
+RUN pip install jupyter_nbextensions_configurator
 
 USER ${NB_USER}
 
-RUN pip install jupyter_contrib_nbextensions --user
-RUN pip install jupyter_nbextensions_configurator --user
 RUN jupyter contrib nbextension install --user
 RUN jupyter nbextensions_configurator enable --user
 RUN jupyter nbextension enable codefolding/main

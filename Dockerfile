@@ -16,12 +16,14 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/
 RUN chmod +x /usr/bin/tini 
 
 RUN chown -R ${NB_UID} ${HOME}
+
+RUN pip install jupyter_contrib_nbextensions --user
+RUN pip install jupyter_nbextensions_configurator --user
+
 USER ${NB_USER}
 
 WORKDIR /home/${NB_USER}
 
-RUN pip install jupyter_contrib_nbextensions --user
-RUN pip install jupyter_nbextensions_configurator --user
 RUN jupyter contrib nbextension install --user
 RUN jupyter nbextensions_configurator enable --user
 RUN jupyter nbextension enable codefolding/main

@@ -10,10 +10,10 @@ COPY . ${HOME}
 
 USER root
 RUN chown -R ${NB_UID} ${HOME}
-RUN pip install jupyter_contrib_nbextensions
-RUN pip install jupyter_nbextensions_configurator
-RUN pip install RISE
-RUN pip install ipywidgets
+RUN pip3 install jupyter_contrib_nbextensions
+RUN pip3 install jupyter_nbextensions_configurator
+RUN pip3 install RISE
+RUN pip3 install ipywidgets
 
 USER ${NB_USER}
 

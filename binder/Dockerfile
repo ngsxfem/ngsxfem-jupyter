@@ -1,4 +1,4 @@
-FROM ngsxfem/ngsxfem:v2.0.2104
+FROM ngsxfem/ngsxfem:v2.0.2105
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000

@@ -1,0 +1,17 @@
+{
+  "name": "Python/Jupyter/xfem",
+  "image": "python:3",
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "runArgs": [
+    "-v", "${PWD}:/workspace",
+    "-p", "8888:8888"
+  ],
+  "appPort": [8888],
+  "postCreateCommand": "pip install xfem"
+}

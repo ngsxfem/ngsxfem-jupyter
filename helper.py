@@ -33,3 +33,14 @@ def ShowPattern(A,precision=-1,binarize=False):
     plt.figure(figsize=(4,4*A.width/A.width))
     plt.imshow(A_all.todense(),interpolation='none',cmap='jet',vmin=minval,vmax=maxval)
     plt.show()   
+
+
+def ProjectOnMultiDimGF(cf,mesh,order,sampling=16):
+    fes = L2(mesh=mesh,order=order)
+    gf_toshow = GridFunction(fes,multidim=0)
+    gf = GridFunction(fes)
+    for i in range(sampling+1):
+        gf.Set(fix_tref(cf,i/sampling))
+        gf_toshow.AddMultiDimComponent(gf.vec)
+    return gf_toshow
+

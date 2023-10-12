@@ -1,0 +1,17 @@
+pages:
+  stage: deploy
+
+  image:
+    name: python:3.11
+    entrypoint: [""]
+     
+  script:
+    - python -m pip install -r requirements.txt
+    - mkdir public
+    - jupyter lite build --pyodide https://lehrenfeld.pages.gwdg.de/ngsx-pyodide/ngsx_pyodide.tar.bz2 --contents . --output-dir public
+      
+  artifacts:
+    paths:
+      - public
+#  when: manual 
+  needs: []  

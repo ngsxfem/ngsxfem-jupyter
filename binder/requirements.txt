@@ -3,8 +3,8 @@ scipy
 matplotlib
 # mpi4py
 # ipyparallel
-ngsolve>=6.2.2203.dev0
-xfem>=2.1.2301
+ngsolve>=6.2.2403.post64.dev0
+xfem>=2.1.2303.post206.dev0
 webgui_jupyter_widgets 
 jupyter_contrib_nbextensions
 jupyter_nbextensions_configurator

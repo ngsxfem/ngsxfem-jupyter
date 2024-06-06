@@ -8,7 +8,7 @@ pages:
   script:
     - python -m pip install -r requirements.txt
     - mkdir public
-    - jupyter lite build --pyodide https://lehrenfeld.pages.gwdg.de/ngsx-pyodide/ngsx_pyodide.tar.bz2 --contents . --output-dir public
+    - jupyter lite build --pyodide https://ngsuite.pages.gwdg.de/ngsx-pyodide/ngsx_pyodide.tar.bz2 --contents . --output-dir public
       
   artifacts:
     paths:
